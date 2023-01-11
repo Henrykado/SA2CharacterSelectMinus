@@ -60,11 +60,11 @@ __declspec(naked) void __cdecl sub_757810()
 	{
 		mov     eax, [esp + 4]
 		mov     eax, [eax]ObjectMaster.Data2
-		movsx   ecx, [eax].CharID
+		movsx   ecx, [eax]MainCharObj2.CharID
 		mov     edx, MainCharObj2
 		mov edx, [edx + ecx * 4]
 		mov ecx, 0xA0B3B8
-		mov dl, [edx].CharID2
+		mov dl, [edx]MainCharObj2.CharID2
 		cmp     dl, Characters_Sonic
 		jnz NotSonic
 		mov     dword ptr[ecx], Texlist_SonEff
@@ -95,7 +95,7 @@ __declspec(naked) void loc_759A18()
 {
 	__asm
 	{
-		movsx	eax, [eax].CharID2
+		movsx	eax, [eax]MainCharObj2.CharID2
 		mov	ecx, 0x2670544
 		mov ecx, [ecx]
 		cmp	eax, Characters_Sonic

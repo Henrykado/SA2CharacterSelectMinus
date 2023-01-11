@@ -25,6 +25,7 @@ DataPointer(char, byte_1DEB31E, 0x01DEB31E);
 DataPointer(short, word_1DEB31F, 0x01DEB31F);
 DataPointer(char, byte_1DEB321, 0x01DEB321);
 DataPointer(float, dword_1D7BB10, 0x01D7BB10);
+DataPointer(SaveData, GameSaveData, 0x1DEC600);
 DataArray(int, StageUnlocked, 0x01A4A974, 1);
 
 FunctionPointer(void, DisplayMissionRanksName, (int*), 0x00676690);

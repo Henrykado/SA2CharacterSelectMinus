@@ -6,7 +6,8 @@
 using std::string;
 using std::unordered_map;
 bool customSet = true;
-
+bool mechlessCharacters = false;
+std::string aRankRequirement = "";
 
 #pragma region mod setting stuff
 
@@ -71,8 +72,9 @@ void init_Config(const char* path)
 	for (int i = 0; i < Characters_Amy; i++)
 		bosscharacters[i] = ParseCharacterID(settings->getString("Boss", charnames[i]), (Characters)i);
 
+	mechlessCharacters = settings->getBool("", "Non Speed Characters", false);
+	aRankRequirement = settings->getString("", "Mission Requirement", "All Five Missions [A Rank]");
 	customSet = settings->getBool("Misc", "customSet", true);
 
 	delete settings;
-
 }
