@@ -1,7 +1,10 @@
-# SA2CharacterSelectPlus
-This sonic adventure 2 mod adds in 4 new buttons in the character select menu for the chao garden, and a new menu for every stage to select 1 of 14 characters!
+# SA2CharacterSelectMinus
+this sonic adventure 2 mod/fork aims to make Character Select PLUS more vanilla-like, by only making you able to choose characters of the same play style as the default character of each level (so only Mech characters for Prison Lane)
+
+it needs to be above the original CSP on the mod loader for it to work
+(also sorry if the code is kinda messy, this was my first time coding in cpp) 
 
 this mod uses Mainmemory's SA2CharSelect mod code to fix loads of errors - https://github.com/MainMemory/SA2CharSel
 
 
-big thanks to Exant and Mainmemory, who helped me out with making this mod
+shoutout to Justin, Exant and Mainmemory, who made the original mod
