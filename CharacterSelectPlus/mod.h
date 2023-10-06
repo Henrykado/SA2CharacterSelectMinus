@@ -9,7 +9,7 @@ extern int defaultcharacters2p[];
 extern int defaultcharacters2palt[];
 extern int bosscharacters[];
 extern bool customSet;
-extern bool mechlessCharacters;
+extern std::string nonSpeedChars;
 extern std::string aRankRequirement;
 void init_Config(const char* path);
 void init_SetFiles();
